@@ -29,9 +29,9 @@ app.controller('mainCtrl', function($scope, itunesService){
   //Also note that that method should be retuning a promise, so you could use .then in this function.
 
   $scope.getSongData = function() {
-    itunesService.getSongData($scope.artist)
+    itunesService.getSongData($scope.artist) //what is in the input field aka what ng-model is set to
     .then(function(response) {
-      $scope.songData = response;
+      $scope.songData = response; //see instructions on UI-Grid, will display songData because that is what data was set to...
     })
   }
 

@@ -29,7 +29,7 @@ app.service('itunesService', function($http, $q){
           };
           searchResultsToDisplay.push(newObj);
         })
-        console.log(searchResultsToDisplay);
+        // console.log(searchResultsToDisplay);
         return searchResultsToDisplay;
       })
   	}
